@@ -1220,16 +1220,6 @@
             "us_ntd_id": "0R02-00319",
             "wikidata_id": "Q96375303"
           }
-        },
-        {
-          "onestop_id": "o-c21-thelink",
-          "name": "The Link",
-          "website": "https://www.mcedd.org/transportation/the-link-public-transit/",
-          "associated_feeds": [
-            {
-              "gtfs_agency_id": "1491"
-            }
-          ]
         }
       ]
     },
@@ -1667,7 +1657,61 @@
               "gtfs_agency_id": "1733"
             }
           ]
-        }
+        }        
+      ]
+    },
+    {
+      "id": "f-c21-thelink",
+      "spec": "gtfs",
+      "urls": {
+        "static_current": "https://oregon-gtfs.trilliumtransit.com/gtfs_data/mcedd-or-us/mcedd-or-us.zip"
+      },
+      "license": {
+        "url": "https://oregon-gtfs.trilliumtransit.com",
+        "use_without_attribution": "yes",
+        "create_derived_product": "yes"
+      },
+      "tags": {
+        "managed_by": "trillium"
+      },
+      "operators": [
+        {
+          "onestop_id": "o-c21-thelink",
+          "name": "The Link",
+          "website": "https://www.mcedd.org/transportation/the-link-public-transit/",
+          "associated_feeds": [
+            {
+              "gtfs_agency_id": "1491"
+            }
+          ]
+        }        
+      ]
+    },
+    {
+      "id": "f-mtbachelor~or~us",
+      "spec": "gtfs",
+      "urls": {
+        "static_current": "https://oregon-gtfs.trilliumtransit.com/gtfs_data/mtbachelor-or-us/mtbachelor-or-us.zip"
+      },
+      "license": {
+        "url": "https://oregon-gtfs.trilliumtransit.com",
+        "use_without_attribution": "yes",
+        "create_derived_product": "yes"
+      },
+      "tags": {
+        "managed_by": "trillium"
+      },
+      "operators": [
+        {
+          "onestop_id": "o-c21-thelink",
+          "name": "Mt. Bachelor Shuttle",
+          "website": "https://www.mtbachelor.com/info/mtbachelor-shuttle/",
+          "associated_feeds": [
+            {
+              "gtfs_agency_id": "881"
+            }
+          ]
+        }        
       ]
     }
   ],
