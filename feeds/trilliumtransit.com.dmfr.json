@@ -1057,7 +1057,7 @@
         {
           "onestop_id": "o-9qc-placercountytransit",
           "name": "Placer County Transit",
-          "website": "https://selahwa.gov/transit/",
+          "website": "https://www.placer.ca.gov/1768/Placer-County-Transit",
           "associated_feeds": [
             {
               "gtfs_agency_id": "874"
@@ -3582,7 +3582,8 @@
       "id": "f-c262f-uniongaptransit",
       "spec": "gtfs",
       "urls": {
-        "static_current": "https://data.trilliumtransit.com/gtfs/uniongap-wa-us/uniongap-wa-us.zip"
+        "static_historic": [ "https://data.trilliumtransit.com/gtfs/uniongap-wa-us/uniongap-wa-us.zip"
+      ]
       },
       "license": {
         "use_without_attribution": "yes",
@@ -3605,7 +3606,8 @@
       "id": "f-c263-selah~wa~us",
       "spec": "gtfs",
       "urls": {
-        "static_current": "https://data.trilliumtransit.com/gtfs/selah-wa-us/selah-wa-us.zip"
+        "static_historic": ["https://data.trilliumtransit.com/gtfs/selah-wa-us/selah-wa-us.zip"
+        ]
       },
       "license": {
         "use_without_attribution": "yes",
@@ -8268,6 +8270,213 @@
           "associated_feeds": [
             {
               "gtfs_agency_id": "1790"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f-piercecounty~wa~us",
+      "spec": "gtfs",
+      "urls": {
+        "static_current": "https://data.trilliumtransit.com/gtfs/piercecounty-wa-us/piercecounty-wa-us.zip"
+      },
+      "license": {
+        "use_without_attribution": "yes",
+        "create_derived_product": "yes"
+      },
+      "operators": [
+        {
+          "onestop_id": "o-piercecounty~wa~us",
+          "name": "Pierce County Human Services",
+          "website": "https://www.piercecountywa.gov/1269/Transportation-Services",
+          "associated_feeds": [
+            {
+              "gtfs_agency_id": "2361"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f-ruralresources~wa~us",
+      "spec": "gtfs",
+      "urls": {
+        "static_current": "https://data.trilliumtransit.com/gtfs/ruralresources-wa-us/ruralresources-wa-us.zip"
+      },
+      "license": {
+        "use_without_attribution": "yes",
+        "create_derived_product": "yes"
+      },
+      "operators": [
+        {
+          "onestop_id": "o-ruralresources~wa~us",
+          "name": "Rural Resources Community Action",
+          "website": "https://ruralresources.org/program/commuter-bus/",
+          "associated_feeds": [
+            {
+              "gtfs_agency_id": "1826"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f-pueblo~co~us",
+      "spec": "gtfs",
+      "urls": {
+        "static_current": "https://data.trilliumtransit.com/gtfs/pueblo-co-us/pueblo-co-us.zip"
+      },
+      "license": {
+        "use_without_attribution": "yes",
+        "create_derived_product": "yes"
+      },
+      "operators": [
+        {
+          "onestop_id": "o-pueblo~co~us",
+          "name": "Pueblo Transit",
+          "website": "https://www.pueblo.us/492/Bus-Schedules",
+          "associated_feeds": [
+            {
+              "gtfs_agency_id": "2299"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f-sheridan~wy~us",
+      "spec": "gtfs",
+      "urls": {
+        "static_current": "https://data.trilliumtransit.com/gtfs/sheridan-wy-us/sheridan-wy-us.zip"
+      },
+      "license": {
+        "use_without_attribution": "yes",
+        "create_derived_product": "yes"
+      },
+      "operators": [
+        {
+          "onestop_id": "o-sheridan~wy~us",
+          "name": "Goose Creek Transit",
+          "website": "https://thehubsheridan.org/goose-creek-transit/",
+          "associated_feeds": [
+            {
+              "gtfs_agency_id": "2359"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f-snowgoosetransit~wa~us",
+      "spec": "gtfs",
+      "urls": {
+        "static_current": "https://data.trilliumtransit.com/gtfs/snowgoosetransit-wa-us/snowgoosetransit-wa-us.zip"
+      },
+      "license": {
+        "use_without_attribution": "yes",
+        "create_derived_product": "yes"
+      },
+      "operators": [
+        {
+          "onestop_id": "o-snowgoosetransit~wa~us",
+          "name": "Snow Goose Transit",
+          "website": "https://snowgoosetransit.org/",
+          "associated_feeds": [
+            {
+              "gtfs_agency_id": "2311"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f-thurston~wa~us",
+      "spec": "gtfs",
+      "urls": {
+        "static_current": "https://data.trilliumtransit.com/gtfs/thurston-wa-us/thurston-wa-us.zip"
+      },
+      "license": {
+        "use_without_attribution": "yes",
+        "create_derived_product": "yes"
+      },
+      "operators": [
+        {
+          "onestop_id": "o-thurston~wa~us",
+          "name": "ruralTRANSIT",
+          "website": "https://www.trpc.org/325/Rural-Transit",
+          "associated_feeds": [
+            {
+              "gtfs_agency_id": "1812"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f-twintransit~wa~us",
+      "spec": "gtfs",
+      "urls": {
+        "static_current": "https://data.trilliumtransit.com/gtfs/twintransit-wa-us/twintransit-wa-us.zip"
+      },
+      "license": {
+        "use_without_attribution": "yes",
+        "create_derived_product": "yes"
+      },
+      "operators": [
+        {
+          "onestop_id": "o-twintransit~wa~us",
+          "name": "Twin Transit",
+          "website": "https://twintransit.org/",
+          "associated_feeds": [
+            {
+              "gtfs_agency_id": "2298"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f-jackson~tn~us",
+      "spec": "gtfs",
+      "urls": {
+        "static_current": "https://data.trilliumtransit.com/gtfs/jackson-tn-us/jackson-tn-us.zip"
+      },
+      "license": {
+        "use_without_attribution": "yes",
+        "create_derived_product": "yes"
+      },
+      "operators": [
+        {
+          "onestop_id": "o-jackson~tn~us",
+          "name": "Jackson Transit Authority",
+          "website": "https://ridejta.com/",
+          "associated_feeds": [
+            {
+              "gtfs_agency_id": "4661"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f-bettendorf~ia~us",
+      "spec": "gtfs",
+      "urls": {
+        "static_current": "https://data.trilliumtransit.com/gtfs/bettendorf-ia-us/bettendorf-ia-us.zip"
+      },
+      "license": {
+        "use_without_attribution": "yes",
+        "create_derived_product": "yes"
+      },
+      "operators": [
+        {
+          "onestop_id": "o-bettendorf~ia~us",
+          "name": "Bettendorf Transit",
+          "website": "https://www.bettendorf.org/departments/engineering___public_works/public_works_operations/transit/index.php",
+          "associated_feeds": [
+            {
+              "gtfs_agency_id": "777"
             }
           ]
         }
