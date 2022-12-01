@@ -2,24 +2,38 @@
   "$schema": "https://dmfr.transit.land/json-schema/dmfr.schema-v0.4.0.json",
   "feeds": [
     {
-      "spec": "gtfs",
       "id": "f-dqchv-alexandriatransitcompanydash",
+      "spec": "gtfs",
       "urls": {
-        "static_current": "http://dashbus.com/google_transit.zip"
+        "static_current": "https://dashbus.com/google_transit.zip"
       },
       "operators": [
         {
           "onestop_id": "o-dqchv-alexandriatransitcompanydash",
-          "tags": {
-            "us_ntd_id": "30071",
-            "wikidata_id": "Q5204322",
-            "twitter_general": "dashbus"
-          },
           "name": "Alexandria Transit Company",
           "short_name": "DASH",
-          "website": "http://www.dashbus.com"
+          "website": "http://www.dashbus.com",
+          "associated_feeds": [
+            {
+              "feed_onestop_id": "f-dqchv-alexandriatransitcompanydash~rt"
+            }
+          ],
+          "tags": {
+            "twitter_general": "dashbus",
+            "us_ntd_id": "30071",
+            "wikidata_id": "Q5204322"
+          }
         }
       ]
+    },
+    {
+      "id": "f-dqchv-alexandriatransitcompanydash~rt",
+      "spec": "gtfs-rt",
+      "urls": {
+        "realtime_vehicle_positions": "https://realtime.prod.dash.obaweb.org/agency/71/tripUpdates",
+        "realtime_trip_updates": "https://realtime.prod.dash.obaweb.org/agency/71/tripUpdates",
+        "realtime_alerts": "https://realtime.prod.dash.obaweb.org/agency/71/tripUpdates"
+      }
     }
   ],
   "license_spdx_identifier": "CDLA-Permissive-1.0"

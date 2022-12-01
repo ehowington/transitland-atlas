@@ -2,10 +2,13 @@
   "$schema": "https://dmfr.transit.land/json-schema/dmfr.schema-v0.4.0.json",
   "feeds": [
     {
-      "spec": "gtfs",
       "id": "f-djfq-birminghamjeffersoncountytransitauthority",
+      "spec": "gtfs",
       "urls": {
-        "static_current": "https://maxtransit.org/wp-content/uploads/2017/05/BJCTA_GTFS_0317.zip"
+        "static_current": "https://maxtransit.org/wp-content/uploads/2020/12/BJCTA-Working-GTFS-File.zip",
+        "static_historic": [
+          "https://maxtransit.org/wp-content/uploads/2017/05/BJCTA_GTFS_0317.zip"
+        ]
       },
       "tags": {
         "gtfs_data_exchange": "birmingham-jefferson-county-transit-authority"
@@ -13,13 +16,13 @@
       "operators": [
         {
           "onestop_id": "o-djfq-birminghamjeffersoncountytransitauthority",
-          "tags": {
-            "us_ntd_id": "40042",
-            "wikidata_id": "Q4916583",
-            "twitter_general": "BJCTAMAX"
-          },
           "name": "Birmingham Jefferson County Transit Authority",
-          "short_name": "MAX"
+          "short_name": "MAX",
+          "tags": {
+            "twitter_general": "BJCTAMAX",
+            "us_ntd_id": "40042",
+            "wikidata_id": "Q4916583"
+          }
         }
       ]
     }

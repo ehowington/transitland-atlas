@@ -2,171 +2,85 @@
   "$schema": "https://dmfr.transit.land/json-schema/dmfr.schema-v0.4.0.json",
   "feeds": [
     {
+      "id": "f-cttransit~hartford~line",
       "spec": "gtfs",
-      "id": "f-drk-cttransit~hartford",
       "urls": {
-        "static_current": "https://www.cttransit.com/sites/default/files/gtfs/googlect_transit.zip"
+        "static_current": "http://www.hartfordline.com/files/gtfs/gtfs.zip"
       },
       "license": {
-        "url": "https://www.cttransit.com/about/developers/terms-of-use",
-        "use_without_attribution": "yes",
-        "create_derived_product": "yes",
-        "redistribute": "yes"
-      },
-      "operators": [
-        {
-          "onestop_id": "o-drk5-cttransit~newhaven",
-          "tags": {
-            "us_ntd_id": "10055",
-            "needs_agency_id": "f-drk-cttransit~hartford",
-            "wikidata_id": "Q5161638",
-            "twitter_general": "cttransit"
-          },
-          "name": "CTTransit - New Haven",
-          "website": "http://www.cttransit.com"
-        },
-        {
-          "onestop_id": "o-drkh-cttransit~waterbury~meriden",
-          "tags": {
-            "us_ntd_id": "10128",
-            "wikidata_id": "Q7057991",
-            "twitter_general": "cttransit"
-          },
-          "name": "CTTransit - Waterbury-Meriden",
-          "website": "http://www.cttransit.com",
-          "associated_feeds": [
-            {
-              "gtfs_agency_id": "google_wa-me_transit"
-            }
-          ]
-        },
-        {
-          "onestop_id": "o-drkj-cttransit~newbritain~bristol",
-          "tags": {
-            "us_ntd_id": "10130"
-          },
-          "name": "CTTransit - New Britain-Bristol",
-          "website": "http://www.cttransit.com",
-          "associated_feeds": [
-            {
-              "gtfs_agency_id": "4"
-            }
-          ]
-        },
-        {
-          "onestop_id": "o-dr7-cttransit~stamford",
-          "name": "CTTransit- Stamford",
-          "associated_feeds": [
-            {
-              "gtfs_agency_id": "googlestam_transit"
-            }
-          ],
-          "tags": {
-            "us_ntd_id": "10056",
-            "wikidata_id": "Q5161640",
-            "twitter_general": "cttransit"
-          }
-        },
-        {
-          "onestop_id": "o-drkj-cttransit~newbritain",
-          "name": "CTTransit - New Britain",
-          "associated_feeds": [
-            {
-              "gtfs_agency_id": "googlenb_transit"
-            }
-          ],
-          "tags": {
-            "us_ntd_id": "10045",
-            "wikidata_id": "Q5161636",
-            "twitter_general": "cttransit"
-          }
-        }
-      ]
+        "url": "https://www.cttransit.com/about/developers/terms-of-use"
+      }
     },
     {
-      "spec": "gtfs",
-      "id": "f-drkhr-cttransit~meriden",
-      "urls": {
-        "static_current": "https://www.cttransit.com/sites/default/files/gtfs/googlect_transit.zip"
-      },
-      "license": {
-        "url": "https://www.cttransit.com/about/developers/terms-of-use",
-        "use_without_attribution": "yes",
-        "create_derived_product": "yes",
-        "redistribute": "yes"
-      },
-      "tags": {
-        "status": "removed"
-      },
-      "operators": [
-        {
-          "onestop_id": "o-drkhr-cttransit~meriden",
-          "name": "CTTransit - Meriden",
-          "tags": {
-            "us_ntd_id": "10128",
-            "wikidata_id": "Q7057991",
-            "twitter_general": "cttransit"
-          }
-        }
-      ]
-    },
-    {
-      "spec": "gtfs",
-      "id": "f-dr79-cttransit~stamford",
-      "urls": {
-        "static_current": "https://www.cttransit.com/sites/default/files/gtfs/googlect_transit.zip"
-      },
-      "license": {
-        "url": "https://www.cttransit.com/about/developers/terms-of-use",
-        "use_without_attribution": "yes",
-        "create_derived_product": "yes",
-        "redistribute": "yes"
-      },
-      "operators": [
-        {
-          "onestop_id": "o-dr79-cttransit~stamford",
-          "tags": {
-            "us_ntd_id": "10056",
-            "wikidata_id": "Q5161640",
-            "twitter_general": "cttransit"
-          },
-          "name": "CTTransit - Stamford"
-        }
-      ]
-    },
-    {
+      "id": "f-cttransit~rt",
+      "supersedes_ids": [
+        "f-cttransithartford~rt",
+        "f-drkj-cttransit~newbritain~rt",
+        "f-drkj-cttransit~newbritain~bristol~rt",
+        "f-dr79-cttransit~stamford~rt",
+        "f-drk5-cttransit~newhaven~rt",
+        "f-drkh-cttransit~waterbury~meriden~rt",
+        "f-drkhr-cttransit~meriden~rt"
+      ],
       "spec": "gtfs-rt",
-      "id": "f-cttransithartford~rt",
       "urls": {
-        "realtime_alerts": "http://65.213.12.244/realtimefeed/alert/alerts.pb",
-        "realtime_trip_updates": "http://65.213.12.244/realtimefeed/tripupdate/tripupdates.pb",
-        "realtime_vehicle_positions": "http://65.213.12.244/realtimefeed/vehicle/vehiclepositions.pb"
+        "realtime_vehicle_positions": "https://s3.amazonaws.com/cttransit-realtime-prod/vehiclepositions.pb",
+        "realtime_trip_updates": "https://s3.amazonaws.com/cttransit-realtime-prod/tripupdates.pb",
+        "realtime_alerts": "https://s3.amazonaws.com/cttransit-realtime-prod/alerts.pb"
       },
-      "tags": {
-        "notes": "Possibly blocking Amazon/EC2 address space."
+      "license": {
+        "url": "https://www.cttransit.com/about/developers/terms-of-use"
+      }
+    },
+    {
+      "id": "f-drk-cttransit~hartford",
+      "supersedes_ids": [
+        "f-dr79-cttransit~stamford",
+        "f-drkhr-cttransit~meriden"
+      ],
+      "spec": "gtfs",
+      "urls": {
+        "static_current": "https://www.cttransit.com/sites/default/files/gtfs/googlect_transit.zip"
+      },
+      "license": {
+        "url": "https://www.cttransit.com/about/developers/terms-of-use",
+        "use_without_attribution": "yes",
+        "create_derived_product": "yes"
       }
     }
   ],
-  "license_spdx_identifier": "CDLA-Permissive-1.0",
   "operators": [
     {
-      "onestop_id": "o-drk-cttransit~hartford",
-      "tags": {
-        "us_ntd_id": "10048",
-        "wikidata_id": "Q5161635",
-        "twitter_general": "cttransit"
-      },
-      "name": "CTTransit - Hartford",
+      "onestop_id": "o-cttransit",
+      "supersedes_ids": [
+        "o-drk-cttransit~hartford",
+        "o-dr7-cttransit~stamford",
+        "o-drk5-cttransit~newhaven",
+        "o-drkh-cttransit~waterbury~meriden",
+        "o-drkj-cttransit~newbritain",
+        "o-drkj-cttransit~newbritain~bristol"
+      ],
+      "name": "Connecticut Department of Transportation (ConnDOT)",
+      "short_name": "CTtransit",
       "website": "http://www.cttransit.com",
       "associated_feeds": [
         {
-          "feed_onestop_id": "f-drk-cttransit~hartford",
-          "gtfs_agency_id": "googleha_transit"
+          "feed_onestop_id": "f-cttransit~hartford~line"
         },
         {
-          "feed_onestop_id": "f-cttransithartford~rt"
+          "feed_onestop_id": "f-cttransit~rt"
+        },
+        {
+          "feed_onestop_id": "f-drk-cttransit~hartford"
         }
-      ]
+      ],
+      "tags": {
+        "developer_site": "https://www.cttransit.com/about/developers",
+        "twitter_general": "cttransit",
+        "us_ntd_id": "10048",
+        "wikidata_id": "Q5161635"
+      }
     }
-  ]
+  ],
+  "license_spdx_identifier": "CDLA-Permissive-1.0"
 }

@@ -1,0 +1,56 @@
+{
+  "$schema": "https://dmfr.transit.land/json-schema/dmfr.schema-v0.4.0.json",
+  "feeds": [
+    {
+      "id": "f-9q9-modesto~ca~us",
+      "supersedes_ids": [
+        "f-9q9y-escalon~ca~us"
+      ],
+      "spec": "gtfs",
+      "urls": {
+        "static_current": "https://www.modestoareaexpress.com/preview-gtfs.zip",
+        "static_historic": [
+          "http://data.trilliumtransit.com/gtfs/modesto-ca-us/modesto-ca-us.zip"
+        ]
+      },
+      "tags": {
+        "feed_id": "modesto-ca-us",
+        "gtfs_data_exchange": "modesto-area-express",
+        "managed_by": "trillium"
+      },
+      "operators": [
+        {
+          "onestop_id": "o-9q9-modestoareaexpress",
+          "name": "Modesto Area Express",
+          "short_name": "MAX",
+          "website": "http://www.modestoareaexpress.com/",
+          "associated_feeds": [
+            {
+              "gtfs_agency_id": "95"
+            },
+            {
+              "feed_onestop_id": "f-modestoareaexpress~rt"
+            }
+          ],
+          "tags": {
+            "developer_site": "https://www.stanrta.org/431/GTFS-Information-Datasets",
+            "omd_provider_id": "modesto-area-express",
+            "twitter_general": "StanRTARideTheS",
+            "us_ntd_id": "90007",
+            "wikidata_id": "Q112664203"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f-modestoareaexpress~rt",
+      "spec": "gtfs-rt",
+      "urls": {
+        "realtime_vehicle_positions": "https://max.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition",
+        "realtime_trip_updates": "https://max.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=Tripupdate",
+        "realtime_alerts": "https://max.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=Alert"
+      }
+    }
+  ],
+  "license_spdx_identifier": "CDLA-Permissive-1.0"
+}

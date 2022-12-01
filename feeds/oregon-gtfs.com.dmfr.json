@@ -533,43 +533,6 @@
       ]
     },
     {
-      "id": "f-9rbm-corvallis~or~us",
-      "spec": "gtfs",
-      "urls": {
-        "static_historic": [
-          "https://oregon-gtfs.trilliumtransit.com/gtfs_data/corvallis-or-us/corvallis-or-us.zip"
-        ]
-      },
-      "license": {
-        "url": "https://oregon-gtfs.trilliumtransit.com",
-        "use_without_attribution": "yes",
-        "create_derived_product": "yes"
-      },
-      "tags": {
-        "gtfs_data_exchange": "corvallis-transit-system"
-      },
-      "operators": [
-        {
-          "onestop_id": "o-9rbm-corvallistransitsystem",
-          "name": "Corvallis Transit System",
-          "short_name": "CTS",
-          "website": "http://www.CorvallisTransit.com",
-          "associated_feeds": [
-            {
-              "gtfs_agency_id": "445"
-            },
-            {
-              "feed_onestop_id": "f-corvallis~or~rt"
-            }
-          ],
-          "tags": {
-            "twitter_general": "cityofcorvallis",
-            "us_ntd_id": "47"
-          }
-        }
-      ]
-    },
-    {
       "id": "f-9rbs-linnshuttle~or~us",
       "spec": "gtfs",
       "urls": {
@@ -1220,24 +1183,7 @@
             "us_ntd_id": "0R02-00319",
             "wikidata_id": "Q96375303"
           }
-        }
-      ]
-    },
-    {
-      "id": "f-c21-thelink",
-      "spec": "gtfs",
-      "urls": {
-        "static_current": "https://oregon-gtfs.trilliumtransit.com/gtfs_data/mcedd-or-us/mcedd-or-us.zip"
-      },
-      "license": {
-        "url": "https://oregon-gtfs.trilliumtransit.com",
-        "use_without_attribution": "yes",
-        "create_derived_product": "yes"
-      },
-      "tags": {
-        "managed_by": "trillium"
-      },
-      "operators": [
+        },
         {
           "onestop_id": "o-c21-thelink",
           "name": "The Link",
@@ -1520,33 +1466,6 @@
       ]
     },
     {
-      "id": "f-mtbachelor~or~us",
-      "spec": "gtfs",
-      "urls": {
-        "static_current": "https://oregon-gtfs.trilliumtransit.com/gtfs_data/mtbachelor-or-us/mtbachelor-or-us.zip"
-      },
-      "license": {
-        "url": "https://oregon-gtfs.trilliumtransit.com",
-        "use_without_attribution": "yes",
-        "create_derived_product": "yes"
-      },
-      "tags": {
-        "managed_by": "trillium"
-      },
-      "operators": [
-        {
-          "onestop_id": "o-mtbachelor~or~us",
-          "name": "Mt. Bachelor Shuttle",
-          "website": "https://www.mtbachelor.com/info/mtbachelor-shuttle/",
-          "associated_feeds": [
-            {
-              "gtfs_agency_id": "881"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "f-pendleton~or~us",
       "spec": "gtfs",
       "urls": {
@@ -1711,7 +1630,7 @@
               "gtfs_agency_id": "1733"
             }
           ]
-        }        
+        }
       ]
     }
   ],

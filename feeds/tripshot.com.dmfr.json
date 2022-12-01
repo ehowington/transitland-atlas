@@ -1,0 +1,124 @@
+{
+  "$schema": "https://dmfr.transit.land/json-schema/dmfr.schema-v0.4.0.json",
+  "feeds": [
+    {
+      "id": "f-9q4-smat~ca~us",
+      "spec": "gtfs",
+      "urls": {
+        "static_current": "https://smrt.tripshot.com/v1/gtfs.zip?regionId=CA558DDC-D7F2-4B48-9CAC-DEEA1134F820",
+        "static_historic": [
+          "https://data.trilliumtransit.com/gtfs/smat-ca-us/smat-ca-us.zip"
+        ]
+      },
+      "license": {
+        "use_without_attribution": "yes",
+        "create_derived_product": "yes"
+      },
+      "tags": {
+        "status": "outdated"
+      },
+      "operators": [
+        {
+          "onestop_id": "o-9q4-santamariaareatransit",
+          "name": "Santa Maria Area Transit",
+          "short_name": "SMAT",
+          "website": "http://www.cityofsantamaria.org/home/showdocument?id=6159",
+          "associated_feeds": [
+            {
+              "feed_onestop_id": "f-9q4-smat~ca~us~rt"
+            }
+          ],
+          "tags": {
+            "twitter_general": "City_SantaMaria",
+            "us_ntd_id": "90087",
+            "wikidata_id": "Q7419673"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f-9q4-smat~ca~us~rt",
+      "spec": "gtfs-rt",
+      "urls": {
+        "realtime_vehicle_positions": "https://smrt.tripshot.com/v1/gtfs/realtime/vehiclePosition/CA558DDC-D7F2-4B48-9CAC-DEEA1134F820",
+        "realtime_trip_updates": "https://smrt.tripshot.com/v1/gtfs/realtime/tripUpdate/CA558DDC-D7F2-4B48-9CAC-DEEA1134F820",
+        "realtime_alerts": "https://smrt.tripshot.com/v1/gtfs/realtime/serviceAlert/CA558DDC-D7F2-4B48-9CAC-DEEA1134F820"
+      }
+    },
+    {
+      "id": "f-9qh0-anaheim~ca~us",
+      "spec": "gtfs",
+      "urls": {
+        "static_current": "https://art.tripshot.com/v1/gtfs.zip?regionId=CA558DDC-D7F2-4B48-9CAC-DEEA1134F820",
+        "static_historic": [
+          "http://data.trilliumtransit.com/gtfs/anaheim-ca-us/anaheim-ca-us.zip"
+        ]
+      },
+      "license": {
+        "use_without_attribution": "yes",
+        "create_derived_product": "yes"
+      },
+      "tags": {
+        "gtfs_data_exchange": "anaheim-resort-transportation"
+      },
+      "operators": [
+        {
+          "onestop_id": "o-9qh0-anaheimresorttransportation",
+          "name": "Anaheim Resort Transportation",
+          "short_name": "ART",
+          "website": "https://rideart.org/",
+          "associated_feeds": [
+            {
+              "feed_onestop_id": "f-anaheimresorttransportation~rt"
+            }
+          ],
+          "tags": {
+            "twitter_general": "RideARTbus",
+            "us_ntd_id": "90211",
+            "wikidata_id": "Q4750893"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f-anaheimresorttransportation~rt",
+      "spec": "gtfs-rt",
+      "urls": {
+        "realtime_vehicle_positions": "https://art.tripshot.com/v1/gtfs/realtime/vehiclePosition/CA558DDC-D7F2-4B48-9CAC-DEEA1134F820",
+        "realtime_trip_updates": "https://art.tripshot.com/v1/gtfs/realtime/CA558DDC-D7F2-4B48-9CAC-DEEA1134F820",
+        "realtime_alerts": "https://art.tripshot.com/v1/gtfs/realtime/serviceAlert/CA558DDC-D7F2-4B48-9CAC-DEEA1134F820"
+      },
+      "license": {
+        "url": "https://rideart.org/gtfs/"
+      }
+    },
+    {
+      "id": "f-ucla~bruinbus",
+      "spec": "gtfs",
+      "urls": {
+        "static_current": "https://uclabruinbus.tripshot.com/v1/gtfs.zip?regionId=CA558DDC-D7F2-4B48-9CAC-DEEA1134F820"
+      },
+      "operators": [
+        {
+          "onestop_id": "o-ucla~bruinbus",
+          "name": "UCLA BruinBus",
+          "associated_feeds": [
+            {
+              "feed_onestop_id": "f-ucla~bruinbus~rt"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f-ucla~bruinbus~rt",
+      "spec": "gtfs-rt",
+      "urls": {
+        "realtime_vehicle_positions": "https://uclabruinbus.tripshot.com/v1/gtfs/realtime/vehiclePosition/CA558DDC-D7F2-4B48-9CAC-DEEA1134F820",
+        "realtime_trip_updates": "https://uclabruinbus.tripshot.com/v1/gtfs/realtime/tripUpdate/CA558DDC-D7F2-4B48-9CAC-DEEA1134F820",
+        "realtime_alerts": "https://uclabruinbus.tripshot.com/v1/gtfs/realtime/serviceAlert/CA558DDC-D7F2-4B48-9CAC-DEEA1134F820"
+      }
+    }
+  ],
+  "license_spdx_identifier": "CDLA-Permissive-1.0"
+}

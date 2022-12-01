@@ -1,0 +1,42 @@
+{
+  "$schema": "https://dmfr.transit.land/json-schema/dmfr.schema-v0.4.0.json",
+  "feeds": [
+    {
+      "id": "f-west~hollywood",
+      "spec": "gtfs",
+      "urls": {
+        "static_current": "https://www.weho.org/home/showdocument?id=53383&t=637901042129473913"
+      },
+      "operators": [
+        {
+          "onestop_id": "o-west~hollywood",
+          "name": "City of West Hollywood",
+          "short_name": "WeHo Cityline Shuttles",
+          "website": "https://www.weho.org/services/public-transportation-transit-options/cityline-shuttle",
+          "associated_feeds": [
+            {
+              "feed_onestop_id": "f-west~hollywood~rt"
+            }
+          ],
+          "tags": {
+            "us_ntd_id": "90294"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f-west~hollywood~rt",
+      "spec": "gtfs-rt",
+      "urls": {
+        "realtime_vehicle_positions": "https://webservices.umoiq.com/api/gtfs-rt/v1/vehicle-positions/west-hollywood",
+        "realtime_trip_updates": "https://webservices.umoiq.com/api/gtfs-rt/v1/trip-updates/west-hollywood",
+        "realtime_alerts": "https://webservices.umoiq.com/api/gtfs-rt/v1/service-alerts/west-hollywood"
+      },
+      "authorization": {
+        "type": "header",
+        "param_name": "x-umo-iq-api-key"
+      }
+    }
+  ],
+  "license_spdx_identifier": "CDLA-Permissive-1.0"
+}

@@ -2,10 +2,10 @@
   "$schema": "https://dmfr.transit.land/json-schema/dmfr.schema-v0.4.0.json",
   "feeds": [
     {
-      "spec": "gtfs",
       "id": "f-u24q-ljubljanskipotniškipromet",
+      "spec": "gtfs",
       "urls": {
-        "static_current": "http://data.lpp.si/routes/getGTFS"
+        "static_current": "https://data.lpp.si/api/gtfs/feed.zip"
       },
       "operators": [
         {

@@ -10,19 +10,22 @@ jobs:
     - uses: actions/checkout@v2
     - uses: actions/setup-python@v1
       with:
-        python-version: '3.6'
+        python-version: '3.10'
     - name: Install dependencies
       run: |
         pip install pipenv
         cd scripts && pipenv install
     - name: Install transitland-lib
       run: |
-        wget https://github.com/interline-io/transitland-lib/releases/download/v0.8.6/transitland-linux -O transitland
+        wget https://github.com/interline-io/transitland-lib/releases/download/v0.11.1/transitland-linux -O transitland
         chmod a+rx transitland
         sudo mv transitland /usr/local/bin
     - name: Fetch latest data
       run: |-
         cd scripts && pipenv run python convert-mds-csv-to-dmfr.py > ../feeds/openmobilityfoundation.github.com.dmfr.json
+    - name: Format in the opinionated DMFR format
+      run: |
+        find ./feeds -type f -name "*.dmfr.json" -exec transitland dmfr format --save {} \;
     - name: Validate feeds
       run: cd scripts && python validate-feeds.py
     - name: Commit and push if it changed
